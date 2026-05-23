@@ -1,14 +1,14 @@
 name: Visa Data Auto-Updater
 on:
   schedule:
-    - cron: '0 0 * * 1' # Har Monday raat 12 baje
+    - cron: '0 0 * * 1'
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # GitHub Action ko file likhne ki ijazat dene ke liye
+      contents: write
     steps:
       - uses: actions/checkout@v3
         with:
@@ -29,6 +29,11 @@ jobs:
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
-          git add data/master_visa_data.csv
-          git commit -m "Automated Visa Data Update"
-          git push origin main
+          # Agar koi changes hain tabhi commit karein
+          if [[ -n $(git status -s) ]]; then
+            git add data/master_visa_data.csv
+            git commit -m "Automated Visa Data Update"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
