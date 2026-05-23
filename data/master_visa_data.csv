@@ -1,3 +1,6 @@
-Country,Requirements,Official_Link
-Malaysia,"Valid Passport, Passport size photos, Bank statement, Ticket",https://malaysiavisa.imi.gov.my/evisa/evisa.jsp
-Thailand,"Valid Passport, Passport size photos, Bank statement, Ticket",https://www.thaievisa.go.th/
+Country,Visa_Type,Requirements,Official_Link
+Malaysia,Visit Visa,"Passport, Photo, Bank Statement, Ticket",https://malaysiavisa.imi.gov.my
+Malaysia,Business Visa,"Passport, Invitation Letter, Company NTN, Bank Statement",https://malaysiavisa.imi.gov.my
+Thailand,Tourist Visa,"Passport, Photos, Hotel Booking, Return Ticket",https://www.thaievisa.go.th
+Thailand,Business Visa,"Passport, Company Invitation Letter, Bank Statement",https://www.thaievisa.go.th
+Turkey,Study Visa,"Acceptance Letter, Passport, Biometric Photos, Fee Receipt",https://www.visa.gov.tr
