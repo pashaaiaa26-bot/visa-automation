@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-
+import os  
 # Define target countries and their official visa portal URLs
 # Note: You can expand this list as needed.
 visa_sources = {
